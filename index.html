@@ -226,7 +226,7 @@ opacity: 1;
 	<fontHeading><center>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTHE&nbspbook&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</center></fontHeading>
 	<div class="d"><br>
 	<font0>
-	I practice <b>redundancy</b> throughout this book, using extra simple examples of programming. So I hope it is the first easily understandable programming book of professional level for girls and boys age 8+. 
+	We practice <b>redundancy</b> throughout this book, using very simple words and explaining the same things several times. So we hope it is the first easily understandable programming book of professional level for girls and boys age 8+. 
 	<br><br>
 	It is the <a style="color: red"><b>book 2</b></a> <i>pro</i>. Throught this book you will get the knowledge about the majority of concepts of programming.
 	<br><br>
@@ -268,7 +268,7 @@ opacity: 1;
 	</font0>
 
 
-	<fontHeading><center>Only 2 types of objects</center></fontHeading>
+	<fontHeading><center>Only 2 types</center></fontHeading>
 	<font0>
 
 
@@ -377,22 +377,26 @@ opacity: 1;
 	Here we give the machine — as an object — the string <a style="background-color: #ffff00">Hello</a>.
 	<br><br>
 	
-	As we can see from the codes above, we can give the machine  — as an object — data of certain type: the number <a style="background-color: #ffff00">5</a> or the string <a style="background-color: #ffff00">Hello</a>, for example.
+	As we can see from the codes above, we can give the machine  — as an object — data of certain type: whether the number <a style="background-color: #ffff00">5</a> or the string <a style="background-color: #ffff00">Hello</a>, for example.
     <br><br>
-    Indeed, there are a more number of data types that we might give the machine. You yourself can do your own searching over this topic on the Internet.
+    Indeed, there are a more number of types of data that we might give the machine. You yourself can do your own searching over this topic on the Internet.
     <br><br>
-    We here will only take a look at the 2 data types:<br>
-     · <a style="color: #FF00FF"><b>Int</b></a> — which might be represented by the number <b>5</b>, for example;<br>
+    We here will only take a look at the 2 types of data:<br>
+     · <a style="color: #FF00FF"><b>Int</b></a> — which might be represented by the integer number <b>5</b>, for example;<br>
      · <a style="color: #FF00FF"><b>String</b></a> — which might be represented by the string <b>Hello</b>, for example.<br>
 	<br><br>
 	<center>
 <img src="types.png" width="50%">
 	</center>
 	<br>
-	The <a style="color: #FF00FF"><b>Int</b></a> here stands for the <b>int</b>eger number.
+	Of course, the <a style="color: #FF00FF"><b>Int</b></a> here stands for the <b>int</b>eger number.
     <br><br>
-    Absolutely, manipulating just these 2 data types — <a style="color: #FF00FF"><b>Int</b></a> and <a style="color: #FF00FF"><b>String</b></a> — are more than enough to get an idea of the entire data type concept in programming.
-
+    Absolutely, juggling just these 2 data types — <a style="color: #FF00FF"><b>Int</b></a> and <a style="color: #FF00FF"><b>String</b></a> — are enough to get an idea of the entire data type concept in programming.
+	<br><br>
+	<center>
+<img src="juggle.png" height= 300px>
+	</center>
+	<br>
 
 	<!--
     And there will be an error in the result:
@@ -405,12 +409,14 @@ opacity: 1;
 
 <fontHeading><center>This Works Under the Hood</center></fontHeading>
 	<font0>
-			<br><br>
+	<br>
 	<center>
 <img src="underhood.png" width="50%">
 	</center>
 	<br>
-	On the Earth, there are lots of stupid programming languages in which we always must explicitly state the type of the object: whether <a style="color: #FF00FF"><b>Int</b></a> or <a style="color: #FF00FF"><b>String</b></a>, for example.
+	On the Earth, there are lots of stupid programming languages in which we always must explicitly write (report, state) the type of data — whether <a style="color: #FF00FF"><b>Int</b></a> or <a style="color: #FF00FF"><b>String</b></a>, for example — that we give the machine.
+	<br><br>
+	Fortunately, in Kotlin and Swift this reporting is only optional.
 	<br><br>
 	An example of code:
 	<br><br>
@@ -512,11 +518,77 @@ opacity: 1;
 </table>
 </center>
 	<br>
-	<b>Fortunately</b>, in Kotlin and Swift, as we already know, we can, if wanted, not state the type of the object since it may be done automatically. Automatically, by the machine itself!
+	In Kotlin and Swift, we can, if wanted, not write (not report, not state) the type of data we give the machine —   whether there is <a style="color: #FF00FF"><b>Int</b></a> or <a style="color: #FF00FF"><b>String</b></a>, for example:
+
+
 	<br><br>
-	It is called automatic type inference, or just type inference.
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td>&nbsp</td>
+	    <td>fun&nbspmain()&nbsp{
+
+
+	    	<br>
+	    	&nbsp&nbsp&nbsp&nbsp<a style="background-color: ##FFD851">val</a>&nbsp<a style="background-color: #99f599">Sam</a>&nbsp<a style="background-color: ##d3d5ff">=</a>&nbsp<a style="background-color: #ffff00">5</a>
+	    	<br>
+	    	&nbsp&nbsp&nbsp&nbsp<a style="background-color: ##FFD6FF">println(</a><a style="background-color: #99f599">Sam</a><a style="background-color: ##FFD6FF">)</a>
+	    	<br>
+	    	<br>
+	    	&nbsp&nbsp&nbsp&nbsp<a style="background-color: ##FFD851">val</a>&nbsp<a style="background-color: #d3d5ff">Leo</a>&nbsp<a style="background-color: ##d3d5ff">=</a>&nbsp"<a style="background-color: #ffff00">Hello</a>"
+	    	<br>
+	    	&nbsp&nbsp&nbsp&nbsp<a style="background-color: ##FFD6FF">print(</a><a style="background-color: #d3d5ff">Leo</a><a style="background-color: ##FFD6FF">)</a>
+	    	<br>
+	    }</td>
+	    <td><pre>            </pre>
+	    </td>
+	 	<td>
+	    	<a style="background-color: ##FFD851">let</a>&nbsp<a style="background-color: #99f599">Sam</a>&nbsp<a style="background-color: ##d3d5ff">=</a>&nbsp<a style="background-color: #ffff00">5</a>
+	    	<br>
+	    	<a style="background-color: ##FFD6FF">print(</a><a style="background-color: #99f599">Sam</a><a style="background-color: ##FFD6FF">)</a>
+	    	<br><br>
+	 		<a style="background-color: ##FFD851">let</a>&nbsp<a style="background-color: #d3d5ff">Leo</a>&nbsp<a style="background-color: ##d3d5ff">=</a>&nbsp"<a style="background-color: #ffff00">Hello</a>"
+	    	<br>
+	    	<a style="background-color: ##FFD6FF">print(</a><a style="background-color: #d3d5ff">Leo</a><a style="background-color: ##FFD6FF">)</a>
+	    	<br>
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+    <!-- Empty Row 2 -->
+    <tr>
+		<td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+    </tr>
+  	<!-- Result Row 3 -->
+    <tr>
+		<td>&nbsp</td>
+	    <td><a style="background-color: #00FFFF">5</a><br>
+	    	<a style="background-color: #00FFFF">Hello</a></td>
+	    <td>&nbsp</td>
+	    <td><a style="background-color: #00FFFF">5</a><br>
+	    	<a style="background-color: #00FFFF">Hello</a></td>
+	    <td>&nbsp</td>
+    </tr>
+  	<!--  Link Row 7 -->
+    <tr>
+		<td>&nbsp</td>
+	    <td><a href = "https://paiza.io/projects/3oYmZ2KcwFDfdpqItgNn2A?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td>&nbsp</td>
+	    <td><a href = "https://paiza.io/projects/g5hUruRcdUGwjifqWGUvMg?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td>&nbsp</td>
+    </tr>
+</table>
+</center>
+	<br>
+	The machine itself can understand which type is there — whether there is <a style="color: #FF00FF"><b>Int</b></a> or <a style="color: #FF00FF"><b>String</b></a>, for example. It is called automatic type inference, or simply <b>type inference</b>.
 	<br><br>
-	Anyways, type inference is one of reasons why people around the world love Kotlin and Swift so much. Automatic type inference makes code more clear and concise, and it means, awesome.
+	Anyways, type inference is one of reasons why people around the world love Kotlin and Swift so much. This nice feature makes code more clear and concise, and it means, awesome.
+	<br><br>
+	Glory to the Type Inference! I mean, glory to the teams behind Kotlin and Swift!
 
 	<br><br>
 	</font0>
@@ -541,7 +613,7 @@ opacity: 1;
 <center>
 
 <center>
-<fontHeading>Tipping me</fontHeading>
+<fontHeading>Tipping us</fontHeading>
 <font0>
 <br><br>
 with Bitcoin:
@@ -578,7 +650,7 @@ with Bitcoin via lightning:
 	<br><br>
 	<b>KotlinAndSwift</b><a style="color: gray">.github.io</a>
 	<br><br>
-	<small>Author's Telegram Account: <a href = "https://t.me/KotlinAndSwift" target = "_blank">KotlinAndSwift</a></small>
+	<small>Authors' Telegram Account: <a href = "https://t.me/KotlinAndSwift" target = "_blank">KotlinAndSwift</a></small>
 	<br>
 	<small>Twitter: <a href = "https://twitter.com/KotlinAndSwift" target = "_blank">KotlinAndSwift</a></small>
 	<br><br><br>
