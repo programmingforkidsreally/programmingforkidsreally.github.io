@@ -119,17 +119,19 @@ padding: 3px;
 text-align: left;
 }
 
-<!--  for Button -->
+
 .button {
-background-color: #25003d;
-border: none;
-font-family: arial; 
-color: white;
+-webkit-appearance: none;
+background-color: #FFFDCE;
+border: solid #6720DF 5px;
+color: #6720DF;
 padding: 15px 32px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 70%;
+font-family: "Arial Narrow", Arial, sans-serif; 
+font-size: 180%;
+font-weight: bold;
 margin: 4px 2px;
 cursor: pointer;
 }
@@ -381,7 +383,7 @@ opacity: 1;
     <br><br>
     Indeed, there are a more number of types of data that we might give the machine. You yourself can do your own searching over this topic on the Internet.
     <br><br>
-    We here will only take a look at the 2 types of data:<br>
+    We here will only take a look at data of the 2 types:<br>
      · <a style="color: #FF00FF"><b>Int</b></a> — which might be represented by the integer number <b>5</b>, for example;<br>
      · <a style="color: #FF00FF"><b>String</b></a> — which might be represented by the string <b>Hello</b>, for example.<br>
 	<br><br>
@@ -414,11 +416,11 @@ opacity: 1;
 <img src="underhood.png" width="50%">
 	</center>
 	<br>
-	On the Earth, there are lots of stupid programming languages in which we always must explicitly write (report, state) the type of data — whether <a style="color: #FF00FF"><b>Int</b></a> or <a style="color: #FF00FF"><b>String</b></a>, for example — that we give the machine.
+	On the Earth, there are lots of stupid programming languages in which we always must explicitly write (report, state) the type of data we give the machine — whether it is <a style="color: #FF00FF"><b>Int</b></a> or <a style="color: #FF00FF"><b>String</b></a>, for example.
 	<br><br>
 	Fortunately, in Kotlin and Swift this reporting is only optional.
 	<br><br>
-	An example of code:
+	An example of code with reporting:
 	<br><br>
 <center>
 <table>
@@ -468,7 +470,7 @@ opacity: 1;
 </table>
 </center>
 	<br>
-	Yet another example of code:
+	Yet another example of code with reporting:
 	<br><br>
 <center>
 <table>
@@ -518,8 +520,9 @@ opacity: 1;
 </table>
 </center>
 	<br>
-	In Kotlin and Swift, we can, if wanted, not write (not report, not state) the type of data we give the machine —   whether there is <a style="color: #FF00FF"><b>Int</b></a> or <a style="color: #FF00FF"><b>String</b></a>, for example:
-
+	Thankfully, in Kotlin and Swift we can, if wanted, not write (not report, not state) the type of data we give the machine —   whether it is <a style="color: #FF00FF"><b>Int</b></a> or <a style="color: #FF00FF"><b>String</b></a>, for example.
+	<br><br>
+	An example of code without reporting:
 
 	<br><br>
 <center>
@@ -584,18 +587,127 @@ opacity: 1;
 </table>
 </center>
 	<br>
-	The machine itself can understand which type is there — whether there is <a style="color: #FF00FF"><b>Int</b></a> or <a style="color: #FF00FF"><b>String</b></a>, for example. It is called automatic type inference, or simply <b>type inference</b>.
+	It is possible since with Kotlin and Swift the machine itself can understand which type of data is it — whether it is <a style="color: #FF00FF"><b>Int</b></a> or <a style="color: #FF00FF"><b>String</b></a>, for example. When the machine do so it  is called <b>type inference</b>.
 	<br><br>
-	Anyways, type inference is one of reasons why people around the world love Kotlin and Swift so much. This nice feature makes code more clear and concise, and it means, awesome.
+	Type inference is done automatically under the hood — in other words, without our participation and only by the machine itself.
 	<br><br>
-	Glory to the Type Inference! I mean, glory to the teams behind Kotlin and Swift!
+	Anyways, type inference is one of reasons why people around the world love Kotlin and Swift so much. Type inference makes the coder's life a lot easier. Simultaneously, it makes code more clear and concise, meaning awesome.
+	<br><br>
+	Glory to the Type Inference! We mean, glory to the teams behind Kotlin and Swift!
 
 	<br><br>
 	</font0>
 
-	<fontHeading><center>Collections</center></fontHeading>
+	<fontHeading><center>Functions</center></fontHeading>
 	<font0>
-	Bla bla bla
+	You already know a lot of awesome things about Commanders:
+	<br><br>
+	<center>
+<img src="names.png" width="95%">
+	</center>
+	<br>
+	Each Commander has its name and makes the machine do some specific work.
+	<br><br>
+	There are various sorts of Commanders.
+	<br><br>
+	You already know a lot about Pocket Commanders, Arithmetic Commanders, the Commander <b>print</b> and others.
+	<br><br>
+	Anyways, reality, again, is even more stunning!
+	<br><br>
+	We may create our own <b>free</b> Commanders:
+	<br><br>
+	<center>
+<img src="free.png" width="95%">
+	</center>
+	<br>
+	The word <b>free</b> there means that these Commanders can make the machine do anything we say to them. 
+	<br><br>
+	Thanks to these Commanders we can really make the machine (computer, robot) do whatever we want. The imagination is the limit!
+	<br><br>
+	Such Commanders are called <b>Functions</b>.
+	<br><br>
+	Take a look at this code:
+	<br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td>&nbsp</td>
+	    <td>
+<pre>
+fun Sam(Leo: Int): Int {
+val Bob = Leo * 2
+return Bob
+}
+fun main() {
+    println(Sam(1))
+    println(Sam(3))
+    println(Sam(5))
+}
+</pre> 	
+	    </td>
+	    <td><pre>       </pre></td>
+	    <td>
+<pre>
+func Sam(_ Leo: Int)-> Int {
+let Bob = Leo * 2
+return Bob
+}
+
+print(Sam(1))
+print(Sam(3))
+print(Sam(5))
+
+</pre> 	
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+
+  	<!-- Result Row 3 -->
+    <tr>
+		<td>&nbsp</td>
+<td><pre><a style="background-color: #00FFFF">2
+6
+10</a>
+<a href = "https://paiza.io/projects/e9BQWcgBulbVKr0L7MXMBw?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</pre>
+	    </td>
+	    <td>&nbsp</td>
+<td><pre><a style="background-color: #00FFFF">2
+6
+10</a>
+<a href = "https://paiza.io/projects/JTQHyWSsvVfg8Ne5JfvCtA?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</pre>
+	    </td>
+	    <td>&nbsp</td>
+    </tr>
+</table>
+</center>
+	Wow. Fantastic.
+	<br><br>
+	To figure out how the code above works, first try learning from code.
+	<br><br>
+	<button class="button" onclick="myFunction0()">
+	See Explanations to the <a style="color: red">Code</a>
+	</button>
+
+<div id="myDIV0" style="display: none">
+	<br>
+	<b>The Explanations are below. Enjoy them  :)</b>
+	<br><br>
+	By the <a style="color: #6720DF"><b>1-st string</b></a> of code:
+	<br><br>
+
+
+
+
+
+
+</div>
+	<br><br>
+	Great.
+	<br><br>
+	Bla	bla bla.
 
 	<br><br>
 	</font0>
@@ -661,6 +773,22 @@ with Bitcoin via lightning:
 </tr>
 </table>
 </center>
+
+
+
+
+
+<script>
+function myFunction0() {
+  var x = document.getElementById("myDIV0");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
 
 </body>
 </html>
