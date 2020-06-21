@@ -752,15 +752,19 @@ opacity: 1;
 <img src="slaves.png" width="95%">
 	</center>
 	<br>
-	While the creating, you yourself can establish (describe) the specific work that your Slave Commander will make the machine do.
+	Each your Slave Commander will be a slave to you but the commander to the machine.
 	<br><br>
-	So your Slave Commander can make the machine do the specific work that you have previously established (described).
+	When you create your Slave Commander, you can establish (describe) the specific work that this Slave Commander will make the machine do.
 	<br><br>
-	Why are these Commanders called this way? Of course, since <b>all</b> Commanders are our helpers, they all in a way are our slaves. But the thing of Slave Commanders is that precisely you establish (describe) the specific work that your Slave Commander make the machine do.
+	So your Slave Commander can make the machine do the specific work that you previously established (described).
+	<br><br>
+	By the way, since <b>all</b> Commanders are our helpers, they all in a way are our slaves. But the thing of Slave Commanders is that precisely you establish (describe) the specific work that your Slave Commander make the machine do.
 	<br><br>
 	Slave Commanders are called <b>Functions</b>.
 	<br><br>
-	Let's create a Function (Slave Commander) named <a style="background-color: #FFD6FF">displayThisName()</a>. 
+	Creating a Function happens with word <a style="background-color: #FFD851">fun</a> in Kotlin and <a style="background-color: #FFD851">func</a> in Swift.
+	<br><br>
+	Let's create a Function named <a style="background-color: #FFD6FF">displayThisName(&nbsp)&nbsp{&nbsp}</a> that would make the machine print (display) any name that we give this Function. 
 	<br><br>
 	Take a look at this code:
 	<br>
@@ -772,9 +776,9 @@ opacity: 1;
 	  	<td>&nbsp</td>
 	    <td>
 <pre><font0>
-<a style="background-color: #FFD851">fun</a> <a style="background-color: #FFD6FF">displayThisName(</a><a style="background-color: #99f599">anyName</a>: String<a style="background-color: #FFD6FF">)</a> {
-    print(<a style="background-color: #99f599">anyName</a>)
-}
+<a style="background-color: #FFD851">fun</a> <a style="background-color: #FFD6FF">displayThisName(anyName: String) {
+    print(anyName)
+}</a>
 fun main() {
     <a style="background-color: #FFD6FF">displayThisName(</a>"<a style="background-color: #ffff00">Dave</a>"<a style="background-color: #FFD6FF">)</a>
 }
@@ -813,8 +817,8 @@ fun main() {
 	    </td>
 	    <td>
 <pre><font0>
-<a style="background-color: #FFD851">func</a> <a style="background-color: #FFD6FF">displayThisName(</a><a style="background-color: #00ff00"><b>_</b></a> <a style="background-color: #99f599">anyName</a>: String<a style="background-color: #FFD6FF">)</a> {
-    print(<a style="background-color: #99f599">anyName</a>)
+<a style="background-color: #FFD851">func</a> <a style="background-color: #FFD6FF">displayThisName(<b>_</b> anyName: String) {
+    print(anyName)
 }
 
 <a style="background-color: #FFD6FF">displayThisName(</a>"<a style="background-color: #ffff00">Dave</a>"<a style="background-color: #FFD6FF">)</a>
@@ -859,11 +863,11 @@ fun main() {
 	  	<td>&nbsp</td>
 	    <td>
 <pre><font0>
-fun mySaluteTo(anyName: String) {
+<a style="background-color: #FFD851">fun</a> <a style="background-color: #FFD6FF">mySaluteTo(anyName: String) {
     print("Hello, $anyName!")
-}
+}</a>
 fun main() {
-    mySaluteTo("Dave")
+    <a style="background-color: #FFD6FF">mySaluteTo(</a>"<a style="background-color: #ffff00">Dave</a>"<a style="background-color: #FFD6FF">)</a>
 }
 
 <a style="background-color: #00FFFF">Hello, Dave!</a>
@@ -900,11 +904,11 @@ fun main() {
 	    </td>
 	    <td>
 <pre><font0>
-func mySaluteTo(_ anyName: String) {
+<a style="background-color: #FFD851">func</a> <a style="background-color: #FFD6FF">mySaluteTo(_ anyName: String) {
     print("Hello, \(anyName)!")
-}
+}</a>
 
-mySaluteTo("Dave")
+<a style="background-color: #FFD6FF">mySaluteTo(</a>"<a style="background-color: #ffff00">Dave</a>"<a style="background-color: #FFD6FF">)</a>
 
 
 <a style="background-color: #00FFFF">Hello, Dave!</a>
@@ -927,12 +931,12 @@ mySaluteTo("Dave")
 	  	<td>&nbsp</td>
 	    <td>
 <pre><font0>
-fun mySaluteTo(anyName: String) {
+<a style="background-color: #FFD851">fun</a> <a style="background-color: #FFD6FF">mySaluteTo(anyName: String) {
     print("Hello, $anyName!")
-}
+}</a>
 fun main() {
-    mySaluteTo("Dave")
-    mySaluteTo("Richard")
+    <a style="background-color: #FFD6FF">mySaluteTo(</a>"<a style="background-color: #ffff00">Dave</a>"<a style="background-color: #FFD6FF">)</a>
+    <a style="background-color: #FFD6FF">mySaluteTo(</a>"<a style="background-color: #ffff00">Richard</a>"<a style="background-color: #FFD6FF">)</a>
 }
 
 <a style="background-color: #00FFFF">Hello, Dave!</a>
@@ -970,12 +974,12 @@ fun main() {
 	    </td>
 	    <td>
 <pre><font0>
-func mySaluteTo(_ anyName: String) {
+<a style="background-color: #FFD851">func</a> <a style="background-color: #FFD6FF">mySaluteTo(_ anyName: String) {
     print("Hello, \(anyName)!")
-}
+}</a>
 
-mySaluteTo("Dave")
-mySaluteTo("Richard")
+<a style="background-color: #FFD6FF">mySaluteTo(</a>"<a style="background-color: #ffff00">Dave</a>"<a style="background-color: #FFD6FF">)</a>
+<a style="background-color: #FFD6FF">mySaluteTo(</a>"<a style="background-color: #ffff00">Richard</a>"<a style="background-color: #FFD6FF">)</a>
 
 
 <a style="background-color: #00FFFF">Hello, Dave!</a>
@@ -1006,13 +1010,13 @@ mySaluteTo("Richard")
 	  	<td>&nbsp</td>
 	    <td>
 <pre><font0>
-fun mySaluteTo(anyName: String) {
+<a style="background-color: #FFD851">fun</a> <a style="background-color: #FFD6FF">mySaluteTo(anyName: String) {
     val Array = arrayOf("Hi", "Hey", "Yo")
     val Random = Array.random()
     print("$Random, $anyName!")
-}
+}</a>
 fun main() {
-    mySaluteTo("Dave")
+    <a style="background-color: #FFD6FF">mySaluteTo(</a>"<a style="background-color: #ffff00">Dave</a>"<a style="background-color: #FFD6FF">)</a>
 }
 
 <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hi, Dave!</a>
@@ -1057,13 +1061,13 @@ fun main() {
 	    </td>
 	    <td>
 <pre><font0>
-func mySaluteTo(_ anyName: String) {
+<a style="background-color: #FFD851">func</a> <a style="background-color: #FFD6FF">mySaluteTo(_ anyName: String) {
     let Array = ["Hi", "Hey", "Yo"]
     let Random = Array.randomElement()!
     print("\(Random), \(anyName)!")
-}
+}</a>
 
-mySaluteTo("Dave")
+<a style="background-color: #FFD6FF">mySaluteTo(</a>"<a style="background-color: #ffff00">Dave</a>"<a style="background-color: #FFD6FF">)</a>
 
 
 <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hi, Dave!</a>
@@ -1137,94 +1141,14 @@ Take a look at this code:
 	  	<td>&nbsp</td>
 	    <td>
 <pre><font0>
-class <a style="background-color: #FFD6FF">fridge {</a>
+class <a style="background-color: #FFD6FF">fridge {
     var sprite = 9
     var coke = 8 
     var fanta = 7
-<a style="background-color: #FFD6FF">}</a>
-fun main() {
-    val pocket = <a style="background-color: #FFD6FF">fridge()</a>
-    print("${pocket.fanta} cans of Fanta")
-}
-
-<a style="background-color: #00FFFF">7 cans of Fanta</a>
-<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
-</font0>
-
-</pre> 	
-</font0>
-</pre> 	
-	    </td>
-	    <td><a style="color: lightgray">
-	   <pre>             </pre><br><center>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br></center></a>
-	    </td>
-	    <td>
-<pre><font0>
-class <a style="background-color: #FFD6FF">fridge {</a>
-    var sprite = 9
-    var coke = 8 
-    var fanta = 7
-<a style="background-color: #FFD6FF">}</a>
-
-let pocket = <a style="background-color: #FFD6FF">fridge()</a>
-print("\(pocket.fanta) cans of Fanta")
-
-
-<a style="background-color: #00FFFF">7 cans of Fanta</a>
-<a href = "https://paiza.io/projects/44UVbOIeiM1sAdgOyPUpag?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
-</font0>
-
-</pre> 	
-	 	</td>
-		<td>&nbsp</td>
-	</tr>
-</table>
-</center>
-<font0>
-
-Or the same above code in more colors:
-	<br>
-</font0>
-<center>
-<table>
-  
-	<tr>
-	  	<td>&nbsp</td>
-	    <td>
-<pre><font0>
-class <a style="background-color: #FFD6FF">fridge {</a>
-    var sprite = 9
-    var coke = 8 
-    var <a style="background-color: #d3d5ff">fanta</a> = 7
-<a style="background-color: #FFD6FF">}</a>
+}</a>
 fun main() {
     val <a style="background-color: #99f599">pocket</a> = <a style="background-color: #FFD6FF">fridge()</a>
-    print("${<a style="background-color: #99f599">pocket</a>.<a style="background-color: #d3d5ff">fanta</a>} cans of Fanta")
+    print("${<a style="background-color: #99f599">pocket</a>.fanta} cans of Fanta")
 }
 
 <a style="background-color: #00FFFF">7 cans of Fanta</a>
@@ -1265,14 +1189,14 @@ fun main() {
 	    </td>
 	    <td>
 <pre><font0>
-class <a style="background-color: #FFD6FF">fridge {</a>
+class <a style="background-color: #FFD6FF">fridge {
     var sprite = 9
     var coke = 8 
-    var <a style="background-color: #d3d5ff">fanta</a> = 7
-<a style="background-color: #FFD6FF">}</a>
+    var fanta = 7
+}</a>
 
 let <a style="background-color: #99f599">pocket</a> = <a style="background-color: #FFD6FF">fridge()</a>
-print("\(<a style="background-color: #99f599">pocket</a>.<a style="background-color: #d3d5ff">fanta</a>) cans of Fanta")
+print("\(<a style="background-color: #99f599">pocket</a>.fanta) cans of Fanta")
 
 
 <a style="background-color: #00FFFF">7 cans of Fanta</a>
@@ -1286,7 +1210,6 @@ print("\(<a style="background-color: #99f599">pocket</a>.<a style="background-co
 </table>
 </center>
 <font0>
-
 	Wow. Great.
 	<br><br>
 	Suppose we took 5 cans of Fanta from the fridge.
@@ -1300,16 +1223,16 @@ print("\(<a style="background-color: #99f599">pocket</a>.<a style="background-co
 	  	<td>&nbsp</td>
 	    <td>
 <pre><font0>
-class <a style="background-color: #FFD6FF">fridge {</a>
+class <a style="background-color: #FFD6FF">fridge {
     var sprite = 9
     var coke = 8 
     var fanta = 7
-<a style="background-color: #FFD6FF">}</a>
+}</a>
 fun main() {
     val pocket = <a style="background-color: #FFD6FF">fridge()</a>
     val took_fanta = 5
     pocket.fanta = pocket.fanta - took_fanta 
-    print("${pocket.fanta} cans of Sprite")
+    print("${pocket.fanta} cans of Fanta")
 }
 
 <a style="background-color: #00FFFF">2 cans of Fanta</a>
@@ -1350,16 +1273,16 @@ fun main() {
 	    </td>
 	    <td>
 <pre><font0>
-class <a style="background-color: #FFD6FF">fridge {</a>
+class <a style="background-color: #FFD6FF">fridge {
     var sprite = 9
     var coke = 8 
     var fanta = 7
-<a style="background-color: #FFD6FF">}</a>
+}</a>
 
 let pocket = <a style="background-color: #FFD6FF">fridge()</a>
 let took_fanta = 5
 pocket.fanta = pocket.fanta - took_fanta 
-print("\(pocket.fanta) cans of Sprite")
+print("\(pocket.fanta) cans of Fanta")
 
 
 <a style="background-color: #00FFFF">2 cans of Fanta</a>
@@ -1383,11 +1306,11 @@ Of course, if wanted, we might say to the program that we took 5 cans of Fanta t
 	  	<td>&nbsp</td>
 	    <td>
 <pre><font0>
-class <a style="background-color: #FFD6FF">fridge {</a>
+class <a style="background-color: #FFD6FF">fridge {
     var sprite = 9
     var coke = 8 
     var fanta = 7
-<a style="background-color: #FFD6FF">}</a>
+}</a>
 fun main() {
     val pocket = <a style="background-color: #FFD6FF">fridge()</a>
     val took_fanta = <a style="background-color: #99f599">readLine()</a>!!.toInt()
@@ -1433,11 +1356,11 @@ fun main() {
 	    </td>
 	    <td>
 <pre><font0>
-class <a style="background-color: #FFD6FF">fridge {</a>
+class <a style="background-color: #FFD6FF">fridge {
     var sprite = 9
     var coke = 8 
     var fanta = 7
-<a style="background-color: #FFD6FF">}</a>
+}</a>
 
 let pocket = <a style="background-color: #FFD6FF">fridge()</a>
 let took_fanta = Int(<a style="background-color: #99f599">readLine()</a>!)!
