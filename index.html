@@ -263,11 +263,13 @@ opacity: 1;
 	<br><br>
     This approach may be very effective.
     <br><br>
-	So you may practice the most extreme approach here: If some code is clear to you, ignore all of my explanations to it.
+	So you may practice the most extreme approach here: If some code is clear to you, ignore all of our explanations to it.
 	<br><br>
 	Try learning from code as much as possible.
 	<br><br>
 	</font0>
+
+
 
 
 	<fontHeading><center>Only 2 types</center></fontHeading>
@@ -398,13 +400,6 @@ opacity: 1;
 	<center>
 <img src="juggle.png" height= 300px>
 	</center>
-	<br>
-
-	<!--
-    And there will be an error in the result:
-	<b>CODE</b>
-	<br><br>
-		-->
 	<br><br>
 	</font0>
 
@@ -594,9 +589,146 @@ opacity: 1;
 	Anyways, type inference is one of reasons why people around the world love Kotlin and Swift so much. Type inference makes the coder's life a lot easier. Simultaneously, it makes code more clear and concise, meaning awesome.
 	<br><br>
 	Glory to the Type Inference! We mean, glory to the teams behind Kotlin and Swift!
-
 	<br><br>
 	</font0>
+
+
+
+
+
+<!--
+
+	<fontHeading><center><a style="color: black">Null</a><a style="color: red">/</a><a style="color: black">Nil</a> means Nothing</center></fontHeading>
+	<font0>
+    Did we say that absolutely, juggling just the 2 types of data — <a style="color: #FF00FF"><b>Int</b></a> and <a style="color: #FF00FF"><b>String</b></a> — are enough to get an idea of the entire data type concept in programming?
+	<br><br>
+	Yes, we did — since really these 2 types of data are enough to.
+	<br><br>
+	But there is the 3-rd type of data — called <a style="color: black"><b>null</b></a> in Kotlin and <a style="color: black"><b>nil</b></a> in Swift — which sometimes may happens even against our desire.
+	<br><br>
+	For example, it happens when a user, which should input some data, inputs nothing:<br>
+	· when in our 1-st goal program <b>Rock&nbsp·&nbspPaper&nbsp·&nbspScissors</b> you — playing the role of the user — don't input anything but press the Enter button on your keyboard. So <b>nothing</b> happens to be put into the Pocket <a style="background-color: #d3d5ff">userInput</a>.
+	<br><br>
+	To purposefully create the situation when we put <b>nothing</b> into the Pocket <a style="background-color: #d3d5ff">userInput</a> and see what heppeans, just put nothing as the user's input into the Pocket like this:
+	<br><br>
+	CODE CODE
+	<br><br>
+	The <a style="color: black"><b>null</b></a><a style="color: red"><b>/</b></a><a style="color: black"><b>nil</b></a> is the programmatic way of saying <b>nothing</b>, absolute nothing. 
+<i>
+	For example, it is when, data that should be put into a Pocket is not existing — in other words, when into the Pocket there is the absence of a proper (valid) object.</i>
+	
+	<br><br>
+	Let's also purposefully create a situation in which we would sometimes put <b>nothing</b> into the Pocket <a style="background-color: #d3d5ff">randomElement</a>.
+	<br><br>
+	Take a look at this code:
+	<br><br>
+<center>
+<table>
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #99f599">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">Hello</a>",&nbsp<a style="background-color: #ffff00">null</a>)<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #d3d5ff">randomElement</a>&nbsp=&nbsp<a style="background-color: #99f599">Array</a>.<a style="background-color: #FFD6FF">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspprint(<a style="background-color: #d3d5ff">randomElement</a>)<br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #99f599">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">Hello</a>",&nbsp<a style="background-color: #ffff00">nil</a>]<br>
+		    let&nbsp<a style="background-color: #d3d5ff">randomElement</a>&nbsp=&nbsp<a style="background-color: #99f599">Array</a>.<a style="background-color: #FFD6FF">randomElement()</a><br>
+		    print(<a style="background-color: #d3d5ff">randomElement</a>)	
+	 	</td>
+		<td></td>
+	</tr>
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hello</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">null</a> 
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Optional(Optional("Hello"))</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Optional(nil)</a>
+		</td>
+	    <td></td>
+    </tr>
+
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/c4h85KSCyG6QvOlXLZor9w?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/f1hEcup71vYDOjKu-tTHwA?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	
+	As we can see from the code above, with a 50% chance —  in 50 cases out of 100 — we will put <b>nothing</b> into the Pocket <a style="background-color: #d3d5ff">randomElement</a> and therefore will get <b>nothing</b> — <a style="color: black"><b>null</b></a> in Kotlin and <a style="color: black"><b>nil</b></a> in Swift — in the result.
+	<br><br>
+	For some reason, Swift, by its <a style="background-color: #00FFFF">Optional(&nbsp)</a>, always warns us about the probability  of <b>nothing</b> — <b>nil</b> in the result. It is so even when there is not that probability: 
+	<br><br>
+<center>
+<table>
+ 
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #99f599">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">Hello</a>",&nbsp"<a style="background-color: #ffff00">Hi</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #d3d5ff">randomElement</a>&nbsp=&nbsp<a style="background-color: #99f599">Array</a>.<a style="background-color: #FFD6FF">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspprint(<a style="background-color: #d3d5ff">randomElement</a>)<br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #99f599">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">Hello</a>",&nbsp"<a style="background-color: #ffff00">Hi</a>"]<br>
+		    let&nbsp<a style="background-color: #d3d5ff">randomElement</a>&nbsp=&nbsp<a style="background-color: #99f599">Array</a>.<a style="background-color: #FFD6FF">randomElement()</a><br>
+		    print(<a style="background-color: #d3d5ff">randomElement</a>)	
+	 	</td>
+		<td></td>
+	</tr>
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hello</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hi</a> 
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Optional(Optional("Hello"))</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Optional(Optional("Hi"))</a>
+		</td>
+	    <td></td>
+    </tr>
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/c4h85KSCyG6QvOlXLZor9w?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/f1hEcup71vYDOjKu-tTHwA?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	To finally solve the <a style="color: black">Null</a><a style="color: red">/</a><a style="color: black">Nil</a> problem we need to call Elvis:
+	<br><br>
+	<center>
+<img src="Elvis.png" width="30%">
+	</center>
+	<br>	<br><br>
+
+
+	</font0>
+-->
+
+
 
 	<fontHeading><center>Functions</center></fontHeading>
 	<font0>
@@ -614,21 +746,21 @@ opacity: 1;
 	<br><br>
 	Anyways, reality, again, is even more stunning!
 	<br><br>
-	We may create our own <b>free</b> Commanders:
+	You may create your own <b>Slave Commanders</b>:
 	<br><br>
 	<center>
-<img src="free.png" width="95%">
+<img src="slaves.png" width="95%">
 	</center>
 	<br>
-	The word <b>free</b> there means that these Commanders can make the machine do anything we say to them. We are <b>free</b> about our desires to say to them anything.
+	While the creating, you yourself can establish (describe) the specific work that your Slave Commander will make the machine do.
 	<br><br>
-	So, thanks to these Commanders, we can really make the machine (computer, robot) do whatever we want. The imagination is the limit!
+	So your Slave Commander can make the machine do the specific work that you have previously established (described).
 	<br><br>
-	Such Commanders are called <b>Functions</b>.
+	Why are these Commanders called this way? Of course, since <b>all</b> Commanders are our helpers, they all in a way are our slaves. But the thing of Slave Commanders is that precisely you establish (describe) the specific work that your Slave Commander make the machine do.
 	<br><br>
-	To make that magic, first of all, we have to create a Function. And then, we may call (invoke) this Function.
+	Slave Commanders are called <b>Functions</b>.
 	<br><br>
-	Let's create the Function named <a style="background-color: #99f599">displayThisName()</a>. 
+	Let's create a Function (Slave Commander) named <a style="background-color: #FFD6FF">displayThisName()</a>. 
 	<br><br>
 	Take a look at this code:
 	<br>
@@ -640,22 +772,22 @@ opacity: 1;
 	  	<td>&nbsp</td>
 	    <td>
 <pre><font0>
-fun <a style="background-color: #99f599">displayThisName(</a><a style="background-color: #FFD6FF">anyName</a>: String<a style="background-color: #99f599">)</a> {
-    print(<a style="background-color: #FFD6FF">anyName</a>)
+<a style="background-color: #FFD851">fun</a> <a style="background-color: #FFD6FF">displayThisName(</a><a style="background-color: #99f599">anyName</a>: String<a style="background-color: #FFD6FF">)</a> {
+    print(<a style="background-color: #99f599">anyName</a>)
 }
 fun main() {
-    <a style="background-color: #99f599">displayThisName(</a>"<a style="background-color: #ffff00">Dave</a>"<a style="background-color: #99f599">)</a>
+    <a style="background-color: #FFD6FF">displayThisName(</a>"<a style="background-color: #ffff00">Dave</a>"<a style="background-color: #FFD6FF">)</a>
 }
 
 <a style="background-color: #00FFFF">Dave</a>
-<a href = "https://paiza.io/projects/e9BQWcgBulbVKr0L7MXMBw?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+<a href = "https://paiza.io/projects/0abuqvzAMiPVtOxTOULO-g?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a>
 </font0>
 
 </pre> 	
 </font0>
 </pre> 	
 	    </td>
-	    <td>
+	    <td><a style="color: lightgray">
 	    	|<br>
 	    	|<br>
 	    	|<br>
@@ -677,19 +809,19 @@ fun main() {
 	    	|<br>
 	    	|<br>
 	    	|<br>
-	    	|<br>
+	    	|<br></a>
 	    </td>
 	    <td>
 <pre><font0>
-func <a style="background-color: #99f599">displayThisName(</a>_ <a style="background-color: #FFD6FF">anyName</a>: String<a style="background-color: #99f599">)</a> {
-    print(<a style="background-color: #FFD6FF">anyName</a>)
+<a style="background-color: #FFD851">func</a> <a style="background-color: #FFD6FF">displayThisName(</a><a style="background-color: #00ff00"><b>_</b></a> <a style="background-color: #99f599">anyName</a>: String<a style="background-color: #FFD6FF">)</a> {
+    print(<a style="background-color: #99f599">anyName</a>)
 }
 
-<a style="background-color: #99f599">displayThisName(</a>"<a style="background-color: #ffff00">Dave</a>"<a style="background-color: #99f599">)</a>
+<a style="background-color: #FFD6FF">displayThisName(</a>"<a style="background-color: #ffff00">Dave</a>"<a style="background-color: #FFD6FF">)</a>
 
 
 <a style="background-color: #00FFFF">Dave</a>
-<a href = "https://paiza.io/projects/JTQHyWSsvVfg8Ne5JfvCtA?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+<a href = "https://paiza.io/projects/0YPi7_iVzVmt5wVFy4jeFQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a>
 </font0>
 
 </pre> 	
@@ -735,14 +867,14 @@ fun main() {
 }
 
 <a style="background-color: #00FFFF">Hello, Dave!</a>
-<a href = "https://paiza.io/projects/e9BQWcgBulbVKr0L7MXMBw?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+<a href = "https://paiza.io/projects/wsMcXEKfu4m13zF1oQNu-Q?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
 </font0>
 
 </pre> 	
 </font0>
 </pre> 	
 	    </td>
-	    <td>
+	    <td><a style="color: lightgray">
 	    	|<br>
 	    	|<br>
 	    	|<br>
@@ -764,7 +896,7 @@ fun main() {
 	    	|<br>
 	    	|<br>
 	    	|<br>
-	    	|<br>
+	    	|<br></a>
 	    </td>
 	    <td>
 <pre><font0>
@@ -776,7 +908,7 @@ mySaluteTo("Dave")
 
 
 <a style="background-color: #00FFFF">Hello, Dave!</a>
-<a href = "https://paiza.io/projects/JTQHyWSsvVfg8Ne5JfvCtA?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+<a href = "https://paiza.io/projects/8uj6vbBpUiIlLtpbrrNZJQ?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
 </font0>
 
 </pre> 	
@@ -786,18 +918,84 @@ mySaluteTo("Dave")
 </table>
 </center>
 <font0>
-
 	Yet another example of code:
+</font0>
+<center>
+<table>
+  
+	<tr>
+	  	<td>&nbsp</td>
+	    <td>
+<pre><font0>
+fun mySaluteTo(anyName: String) {
+    print("Hello, $anyName!")
+}
+fun main() {
+    mySaluteTo("Dave")
+    mySaluteTo("Richard")
+}
+
+<a style="background-color: #00FFFF">Hello, Dave!</a>
+<a style="background-color: #00FFFF">Hello, Richard!</a>
+<a href = "https://paiza.io/projects/wsMcXEKfu4m13zF1oQNu-Q?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</font0>
+
+</pre> 	
+</font0>
+</pre> 	
+	    </td>
+	    <td><a style="color: lightgray">
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br></a>
+	    </td>
+	    <td>
+<pre><font0>
+func mySaluteTo(_ anyName: String) {
+    print("Hello, \(anyName)!")
+}
+
+mySaluteTo("Dave")
+mySaluteTo("Richard")
+
+
+<a style="background-color: #00FFFF">Hello, Dave!</a>
+<a style="background-color: #00FFFF">Hello, Richard!</a>
+<a href = "https://paiza.io/projects/8uj6vbBpUiIlLtpbrrNZJQ?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</font0>
+
+</pre> 	
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+</table>
+</center>
 
 
 
 
 
-
-
-
-
-
+<font0>
+	And yet another example of code:
 
 	<br>
 </font0>
@@ -820,14 +1018,14 @@ fun main() {
 <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hi, Dave!</a>
 <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hey, Dave!</a>
 <a style="color: gray">or</a> <a style="background-color: #00FFFF">Yo, Dave!</a>
-<a href = "https://paiza.io/projects/e9BQWcgBulbVKr0L7MXMBw?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+<a href = "https://paiza.io/projects/ejMglODV1KbSWvgg-lobzw?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
 </font0>
 
 </pre> 	
 </font0>
 </pre> 	
 	    </td>
-	    <td>
+	    <td><a style="color: lightgray">
 	    	|<br>
 	    	|<br>
 	    	|<br>
@@ -853,13 +1051,16 @@ fun main() {
 	    	|<br>
 	    	|<br>
 	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br></a>
 	    </td>
 	    <td>
 <pre><font0>
 func mySaluteTo(_ anyName: String) {
     let Array = ["Hi", "Hey", "Yo"]
-    let Random = Array.randomElement()
-    print("\(Random, \(anyName)!")
+    let Random = Array.randomElement()!
+    print("\(Random), \(anyName)!")
 }
 
 mySaluteTo("Dave")
@@ -868,7 +1069,7 @@ mySaluteTo("Dave")
 <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hi, Dave!</a>
 <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hey, Dave!</a>
 <a style="color: gray">or</a> <a style="background-color: #00FFFF">Yo, Dave!</a>
-<a href = "https://paiza.io/projects/JTQHyWSsvVfg8Ne5JfvCtA?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+<a href = "https://paiza.io/projects/wrtAHvy10sCW_-Na6a7e1g?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
 </font0>
 
 </pre> 	
@@ -882,6 +1083,225 @@ mySaluteTo("Dave")
 	Wow. Great.
 	<br><br>
 	</font0>
+
+
+
+
+
+<fontHeading><center>Functional Programming</center></fontHeading>
+	<font0>
+	Functional Programming is very cool stuff. 
+	<br><br>
+	Right now, we are starting to dive into it. 😎🔥
+	<br><br>
+	</font0>
+
+
+	<fontHeading><center>Very Interesting Objects</center></fontHeading>
+	<font0>
+	We already know that in programming the number <b>5</b> or the string <b>Hello</b>, for example, is an object. And we can control these objects — in other words, we can do some action on these objects.
+	<br><br>
+	We also know that Commanders — for example, Pocket Commanders or Array Commanders or Slave Commanders — may be objects as well; and we can also do some action on these objects.
+	<br><br>
+	But additionally, we can also create much more interesting objects than all those ones we know for now.
+	<br><br>
+	Let's start diving into this world.
+	<br><br>
+	Suppose we again have a fridge:
+	<br><br>
+	<center>
+<img src="fridge.png" width= "20%">
+	</center>
+	<br>
+	And inside the fridge there is the following:<br>
+· 9 cans of Sprite<br>
+· 8 cans of Coke<br>
+· 7 cans of Fanta.<br>
+	<center>
+<img src="three_numbers.png" width= "20%">
+	</center>
+	<br>
+The fridge with all these delicious drinks is sort of a very interesting object, don't you think?
+<br><br>
+In programming, very interesting objects — for example, like such a fridge — are called <b>Classes</b>.
+<br><br>
+Let's create a class (very interesting object) named <a style="background-color: #FFD6FF">fridge</a>.
+<br><br>
+Take a look at this code:
+	<br>
+</font0>
+<center>
+<table>
+  
+	<tr>
+	  	<td>&nbsp</td>
+	    <td>
+<pre><font0>
+class <a style="background-color: #FFD6FF">fridge {</a>
+    var sprite = 9
+    var coke = 8 
+    var fanta = 7
+<a style="background-color: #FFD6FF">}</a>
+fun main() {
+    val pocket = <a style="background-color: #FFD6FF">fridge()</a>
+    print("${pocket.sprite} cans of Sprite")
+}
+
+<a style="background-color: #00FFFF">9 cans of Sprite</a>
+<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</font0>
+
+</pre> 	
+</font0>
+</pre> 	
+	    </td>
+	    <td><a style="color: lightgray">
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br></a>
+	    </td>
+	    <td>
+<pre><font0>
+class <a style="background-color: #FFD6FF">fridge {</a>
+    var sprite = 9
+    var coke = 8 
+    var fanta = 7
+<a style="background-color: #FFD6FF">}</a>
+
+let pocket = <a style="background-color: #FFD6FF">fridge()</a>
+print("\(pocket.sprite) cans of Sprite")
+
+
+<a style="background-color: #00FFFF">9 cans of Sprite</a>
+<a href = "https://paiza.io/projects/44UVbOIeiM1sAdgOyPUpag?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</font0>
+
+</pre> 	
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+</table>
+</center>
+<font0>
+
+Or the same above code in more colors:
+	<br>
+</font0>
+<center>
+<table>
+  
+	<tr>
+	  	<td>&nbsp</td>
+	    <td>
+<pre><font0>
+class <a style="background-color: #FFD6FF">fridge {</a>
+    var <a style="background-color: #d3d5ff">sprite</a> = 9
+    var coke = 8 
+    var fanta = 7
+<a style="background-color: #FFD6FF">}</a>
+fun main() {
+    val <a style="background-color: #99f599">pocket</a> = <a style="background-color: #FFD6FF">fridge()</a>
+    print("${<a style="background-color: #99f599">pocket</a>.<a style="background-color: #d3d5ff">sprite</a>} cans of Sprite")
+}
+
+<a style="background-color: #00FFFF">9 cans of Sprite</a>
+<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</font0>
+
+</pre> 	
+</font0>
+</pre> 	
+	    </td>
+	    <td><a style="color: lightgray">
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br></a>
+	    </td>
+	    <td>
+<pre><font0>
+class <a style="background-color: #FFD6FF">fridge {</a>
+    var <a style="background-color: #d3d5ff">sprite</a> = 9
+    var coke = 8 
+    var fanta = 7
+<a style="background-color: #FFD6FF">}</a>
+
+let <a style="background-color: #99f599">pocket</a> = <a style="background-color: #FFD6FF">fridge()</a>
+print("\(<a style="background-color: #99f599">pocket</a>.<a style="background-color: #d3d5ff">sprite</a>) cans of Sprite")
+
+
+<a style="background-color: #00FFFF">9 cans of Sprite</a>
+<a href = "https://paiza.io/projects/44UVbOIeiM1sAdgOyPUpag?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</font0>
+
+</pre> 	
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+</table>
+</center>
+<font0>
+
+	Wow. Great.
+	<br><br>
+
+	<br><br>
+	</font0>
+
+
+
+
+
+
 
 
 
