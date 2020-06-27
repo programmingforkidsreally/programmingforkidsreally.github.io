@@ -1008,7 +1008,7 @@ fun main() {
 	<font0>
 Let's re-write our program that makes the machine check if some color happens to be red:<br>
 · <b>if</b> so —  the color happens to be red —  the machine prints <a style="background-color: #00FFFF">Hi</a><br>
-· <b>else</b> —  the color happens not to be green — the machine prints <a style="background-color: #00FFFF">Yo</a>.
+· <b>else</b> —  the color happens not to be red — the machine prints <a style="background-color: #00FFFF">Yo</a>.
 	<br><br>
 	This time, the Commander <b>if-else</b>, but in its brief form, will help us do it.
 	<br><br>
@@ -1205,7 +1205,7 @@ Also there, we are doing some manipulations with data types. The grand takeaway 
 	<br><br>
 	If we take, for example, a dog and a cat; each of them has its name, its age, its breed, its sex, its color, its way they sound, and so on. 
 	<br><br>
-	In other words, each of them has its object for each its property:
+	In other words, each of them has its object for each its parameter:
 	<br><br>
 	<big>species = "<b>dog</b>", name = "Max", age = 3, breed = "Beagle", sex = "male", color = "brown", sound = "woof", <b>class</b> = "<b>pet</b>"</big>
 	<br><br>
@@ -1223,9 +1223,7 @@ Also there, we are doing some manipulations with data types. The grand takeaway 
   
 	<tr>
 	  	<td>&nbsp</td>
-	    <td>
-<pre><font0>
-<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">pet(
+<td><pre><font0><a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">pet(
     var anySpecies: String,
     var anyName: String,
     var anyAge: Int
@@ -1253,10 +1251,7 @@ It is 3.
  
 Bella is a cat.
 It is 2.</a>
-<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
-
-</font0>
-</pre> 	
+<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a></font0></pre> 	
 	    </td>
 	    <td><a style="color: lightgray">
 	    	|<br>
@@ -1324,9 +1319,7 @@ It is 2.</a>
 	    	|<br>
 	    	|<br></a>
 	    </td>
-	    <td>
-<pre><font0>
-<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">pet {
+<td><pre><font0><a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">pet {
     var anySpecies: String
     var anyName: String
     var anyAge: Int
@@ -1354,10 +1347,7 @@ It is 3.
 
 Bella is a cat.
 It is 2.</a>
-<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
-</font0>
-
-</pre> 	
+<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a></font0></pre> 	
 	 	</td>
 		<td>&nbsp</td>
 	</tr>
@@ -1368,9 +1358,12 @@ It is 2.</a>
 	<br><br>
 	As we can see, the class <b>pet</b> helps us do more amazing things.
 	<br><br>
+	<!--
 	After all, we might say that the <b>dog</b> Max is an object of the class <b>pet</b>. And that the <b>cat</b> Bella also is an object of the class <b>pet</b>.
 	<br><br>
-	Or, in other words, we might say that the <b>dog</b> Max is an instance of the class <b>pet</b>. And that the <b>cat</b> Bella also is an instance of the class <b>pet</b>.
+	Or, in other words, 
+-->
+	Finally, we might say that the <b>dog</b> Max is an instance of the class <b>pet</b>. And that the <b>cat</b> Bella also is an instance of the class <b>pet</b>.
 	<br><br>
 	This nice program  lets us add bunches of dogs and cats to some stucture to see what happens.
 	<br><br>
@@ -1383,10 +1376,8 @@ It is 2.</a>
 	  	<td>&nbsp</td>
 	    <td>
 <pre><font0>
-<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">pet(
-    var anySpecies: String,
-    anyName: String,
-    anyAge: Int
+<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">pet(var anySpecies: String,
+    anyName: String, anyAge: Int
     ) {
     init {
 
@@ -1450,10 +1441,8 @@ It is 2.</a>
 	    </td>
 	    <td>
 <pre><font0>
-<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">pet {
-    var anySpecies: String,
-    anyName: String,
-    anyAge: Int
+<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">pet {var anySpecies: String,
+    anyName: String, anyAge: Int
     
     init(
     _ anySpecies: String, 
@@ -1612,11 +1601,9 @@ Bella says meow.</a>
 <font0>
 	Wow. Great.
 	<br><br>
-	As we can see, the grand capabilities of <b>class</b> allows us to call a Function in the Method-style.
+	As we can see, the grand capabilities of the <b>class</b> allow us to call a Function in the Method-style.
 	<br><br>
-	In essence, this means that you can create our own Methods which, of course, will be your Slave Commandrs. And even more than it —  all methods, that already exist in Kotlin and Swift, have been created this way.
-	<br><br>
-	Take a look at this code:
+	Indeed, a class may even have one parameter:
 	<br>
 </font0>
 <center>
@@ -1636,8 +1623,8 @@ Bella says meow.</a>
     }
 }</a>
 fun main() {
-    var two = numbers(2)
-    two.triple()
+    var b = numbers(2)
+    b.triple()
 }
 <a style="background-color: #00FFFF">
 6</a>
@@ -1690,8 +1677,8 @@ fun main() {
     }
 }</a>
 
-var two = numbers(2)
-two.triple()
+var b = numbers(2)
+b.triple()
 
 <a style="background-color: #00FFFF">
 6</a>
@@ -1705,10 +1692,9 @@ two.triple()
 </table>
 </center>
 <font0>
-
-	Greart.
+	In essence, this means that you can create your own Methods which, of course, will be your Slave Commanders; and even more than it —  all methods, that already exist in Kotlin and Swift, might have been created this way. And they have.
 	<br><br>
-	Of course, if wanted, we might give an object to the Method through the familiar user input: 
+	If wanted, we might give an object to a Method through the user input <i>(if needed, you might see how to do that so-called user input in the <a style="color: red"><b>book 1</b></a>, paragraph <b>Inputs</b> <a href = "https://kotlinandswift.github.io/" target = "_blank">here</a>)</i>: 
 	<br>
 </font0>
 <center>
@@ -1728,9 +1714,9 @@ two.triple()
     }
 }</a>
 fun main() {
-    val input = readLine()!!.toInt()
-    var two = numbers(input)
-    two.triple()
+    val myInput = readLine()!!.toInt()
+    var b = numbers(myInput)
+    b.triple()
 }
 
 <a style="background-color: #00ff00">2</a>
@@ -1784,9 +1770,9 @@ fun main() {
     }
 }</a>
 
-var input = Int(readLine()!)!
-var two = numbers(input)
-two.triple()
+var myInput = Int(readLine()!)!
+var b = numbers(myInput)
+b.triple()
 
 
 <a style="background-color: #00ff00">2</a>
@@ -1802,208 +1788,26 @@ two.triple()
 </center>
 <font0>
 
-
-</font0>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<center>
-<table>
-  
-	<tr>
-	  	<td>&nbsp</td>
-	    <td>
-<pre><font0>
-<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">fridge {
-    var sprite = 9
-    var coke = 8 
-    var fanta = 7
-}</a>
-fun main() {
-    var <a style="background-color: #99f599">pocket</a> = <a style="background-color: #FFD6FF">fridge()</a>
-    print("${<a style="background-color: #99f599">pocket</a>.fanta} cans of Fanta")
-}
-
-<a style="background-color: #00FFFF">7 cans of Fanta</a>
-<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
-</font0>
-
-</pre> 	
-</font0>
-</pre> 	
-	    </td>
-	    <td><a style="color: lightgray">
-	   <pre>             </pre><br><center>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br></center></a>
-	    </td>
-	    <td>
-<pre><font0>
-<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">fridge {
-    var sprite = 9
-    var coke = 8 
-    var fanta = 7
-}</a>
-
-let <a style="background-color: #99f599">pocket</a> = <a style="background-color: #FFD6FF">fridge()</a>
-print("\(<a style="background-color: #99f599">pocket</a>.fanta) cans of Fanta")
-
-
-<a style="background-color: #00FFFF">7 cans of Fanta</a>
-<a href = "https://paiza.io/projects/44UVbOIeiM1sAdgOyPUpag?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
-</font0>
-
-</pre> 	
-	 	</td>
-		<td>&nbsp</td>
-	</tr>
-</table>
-</center>
-<font0>
-	Wow. Great.
-	<br><br>
-
--->
-
-
-
 <br><br>
 </font0>
 
 
 
-<fontHeading><center>More on Classes</center></fontHeading>
-	<font0>
-	Since we have already got some idea of how classes can work, we may now widen our understanding of them. They (classes) are just astonishing.
-	They can do a lot.
-	<br>
-
-	</font0>
-
-
-
-<fontHeading><center>Funny Method</center></fontHeading>
-	<font0>
-As we already know, Methods are Commanders that are called (invoked) in a very interesting way.
-<br><br>
-For example, in addition to the methods already considered, there is the Method <a style="background-color: #FFD6FF">reversed()</a>:
-<br><br>
-</font0>
-<center>
-<table>
-  
-	<tr>
-	  	<td>&nbsp</td>
-	    <td>
-<pre><font0>fun main() {
-    var <a style="background-color: #99f599">word</a> = "<a style="background-color: #ffff00">TikTok</a>"
-    print(<a style="background-color: #99f599">word</a>.<a style="background-color: #FFD6FF">reversed()</a>)
-}
-
-<a style="background-color: #00FFFF">koTkiT</a>
-<a href = "https://paiza.io/projects/L5EuOvZSNgoqwugMyhA-Yw?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
-</font0>
-
-</pre> 	
-</font0>
-</pre> 	
-	    </td>
-	    <td><a style="color: lightgray">
-	    	<pre>                </pre>      
-	   <center>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br></center></a>
-	    </td>
-	    <td>
-<pre><font0>
-var <a style="background-color: #99f599">word</a> = "<a style="background-color: #ffff00">TikTok</a>"
-print(String(<a style="background-color: #99f599">word</a>.<a style="background-color: #FFD6FF">reversed()</a>))
-
-
-<a style="background-color: #00FFFF">koTkiT</a>
-<a href = "https://paiza.io/projects/Y2qRG1_K4lz6nOIaPZIOcw?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
-</font0>
-
-</pre> 	
-	 	</td>
-		<td>&nbsp</td>
-	</tr>
-</table>
-</center>
-<font0>
-As we can see from the code above, the Method <a style="background-color: #FFD6FF">reversed()</a> — since it is a Method— takes the Commander <a style="background-color: #99f599">word</a> as an object.
-<br><br>
-In more detail, the Method <a style="background-color: #FFD6FF">reversed()</a> takes the object <a style="background-color: #ffff00">TikTok</a> being stored in the pocket of the Commander <a style="background-color: #99f599">word</a> and rearranges all letters in the word in reversed order, getting <a style="background-color: #00FFFF">koTkiT</a> in the result.
-	<br><br>
-	</font0>
 
 
 	<fontHeading><center>Only 2 types of Commanders</center></fontHeading>
 	<font0>
-As we can see, you might divide all Commanders into 2 types:<br>
+After all, you might divide all Commanders into 2 types:<br>
 · Commanders that were trained by someone else — print(), println()<br>
 · Commanders that were or will be trained by you — Slave Commanders.<br>
 <br>
-The same is true of Methods as well.
+Of course, the same is true of Methods as well.
 <br><br>
 	</font0>
 
 	<fontHeading><center>Inheritance</center></fontHeading>
 	<font0>
-As we already know, Methods are Commanders that are called (invoked) in a very interesting way.
+Bla bla bla
 <br><br>
 	</font0>
 
