@@ -381,11 +381,11 @@ opacity: 1;
 	Here we give the machine — as an object — the string <a style="background-color: #ffff00">Hello</a>.
 	<br><br>
 	
-	As we can see from the codes above, we can give the machine  — as an object — data of certain type: whether the integer number <a style="background-color: #ffff00">5</a> or the string <a style="background-color: #ffff00">Hello</a>, for example.
+	As we can see from the codes above, we can give the machine  — as an object — one of certain type: whether the integer number <a style="background-color: #ffff00">5</a> or the string <a style="background-color: #ffff00">Hello</a>, for example.
     <br><br>
-    Indeed, there are more types of data (than just integer numbers or strings) that we might give the machine. If wanted, you yourself might do your own searching over this topic on the Internet. <i>Spoiler</i>: Don't do it so far.
+    Indeed, there are more basic types of objects (than just integer numbers or strings) that we might give to the machine. If wanted, you yourself might do your own searching over this topic on the Internet. <i>Our advise is</i>: Don't do it so far.
     <br><br>
-    We here will only take a look at data of the 2 types:<br>
+    We here will only take a look at the 2 basic types of objects:<br>
      · <a style="color: #FF00FF"><b>Int</b></a> — which might be represented by the integer number <b>5</b>, for example<br>
      · <a style="color: #FF00FF"><b>String</b></a> — which might be represented by the string <b>Hello</b>, for example.<br>
 	<br><br>
@@ -395,7 +395,7 @@ opacity: 1;
 	<br>
 	Of course, the <a style="color: #FF00FF"><b>Int</b></a> here stands for the <b>int</b>eger number.
     <br><br>
-    Absolutely, juggling just these 2 types of data — <a style="color: #FF00FF"><b>Int</b></a> and <a style="color: #FF00FF"><b>String</b></a> — are enough to get an idea of the entire data type concept in programming.
+    Absolutely, juggling just these 2 basic types of objects — <a style="color: #FF00FF"><b>Int</b></a> and <a style="color: #FF00FF"><b>String</b></a> — are enough to get an idea of the entire basic type concept in programming.
 	<br><br>
 	<center>
 <img src="juggle.png" height= 300px>
@@ -411,7 +411,7 @@ opacity: 1;
 <img src="underhood.png" width="50%">
 	</center>
 	<br>
-	On the Earth, there are lots of stupid programming languages in which we always must explicitly write (report, state) the type of data we give the machine — whether it is <a style="color: #FF00FF"><b>Int</b></a> or <a style="color: #FF00FF"><b>String</b></a>, for example.
+	On the Earth, there are lots of stupid programming languages in which programmers always must explicitly write (report, state) the basic type of the object they give to the machine — whether it is <a style="color: #FF00FF"><b>Int</b></a> or <a style="color: #FF00FF"><b>String</b></a>, for example.
 	<br><br>
 	Fortunately, in Kotlin and Swift this reporting is only optional.
 	<br><br>
@@ -694,7 +694,7 @@ opacity: 1;
 	<br><br>
 	Glory to the Type Inference! We mean, glory to the teams behind Kotlin and Swift!
 	<br><br>
-	Whatever, sometimes we must report the types of objects anyway. And we will be doing it at times.
+	Whatever, sometimes we must report the basic types of objects anyway. And we will be doing it at times.
 	<br><br>
 	</font0>
 
@@ -726,9 +726,9 @@ opacity: 1;
 	<br><br>
 	When you create your Slave Commander, you can establish (describe) the specific work that this Slave Commander will make the machine do.
 	<br><br>
-	So your Slave Commander can make the machine do the specific work that you previously established (described).
+	So your Slave Commander can make the machine do precisely the specific work that you previously established (described).
 	<br><br>
-	By the way, since <b>all</b> Commanders are our helpers, they all in a way are our slaves. But the thing of Slave Commanders is that precisely you establish (describe) the specific work that your Slave Commander make the machine do.
+	By the way, since <b>all</b> Commanders are our helpers, they all in a way are our slaves. But the thing of Slave Commanders is that precisely you establish (describe) the specific work that your Slave Commander makes the machine do.
 	<br><br>
 	Slave Commanders are called <b>Functions</b>.
 	<br><br>
@@ -1004,7 +1004,7 @@ fun main() {
 	</font0>
 
 
-<fontHeading><center>Again about <a style="color: black">if-else</a> Commander</center></fontHeading>
+<fontHeading><center>Again about the Commander <a style="color: black">if-else</a></center></fontHeading>
 	<font0>
 Let's re-write our program that makes the machine check if some color happens to be red:<br>
 · <b>if</b> so —  the color happens to be red —  the machine prints <a style="background-color: #00FFFF">Hi</a><br>
@@ -1024,8 +1024,8 @@ Let's re-write our program that makes the machine check if some color happens to
 <pre><font0>fun main() {
     var array = arrayOf("red", "green")
     var random = array.random()
-    var b = <a style="background-color: #ffff00">if</a> (random == "red") "Hi" <a style="background-color: #99f599">else</a> "Yo"
-    print(b)
+    var <a style="background-color: #FFD6FF">b</a> = <a style="background-color: #ffff00">if</a> (random == "red") "Hi" <a style="background-color: #99f599">else</a> "Yo"
+    print(<a style="background-color: #FFD6FF">b</a>)
 }
 
 <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hi</a>
@@ -1057,8 +1057,8 @@ Let's re-write our program that makes the machine check if some color happens to
 <pre><font0>
 var array = ["red", "green"]
 var random = array.randomElement()!
-var b = random == "red" <a style="background-color: #ffff00">?</a> "Hi" <a style="background-color: #99f599">:</a> "Yo"
-print(b)
+var <a style="background-color: #FFD6FF">b</a> = random == "red" <a style="background-color: #ffff00">?</a> "Hi" <a style="background-color: #99f599">:</a> "Yo"
+print(<a style="background-color: #FFD6FF">b</a>)
 
 
 <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hi</a>
@@ -1073,104 +1073,10 @@ print(b)
 </table>
 </center>
 <font0>
-	Just great.
-<br><br>
-
-
-
-
-<!--
-
-Of course, if wanted, we might say to the program that we took 5 cans of Fanta through the user's input as well — by inputing (typing) the number 5 on the keyboard:
+	Just beautiful.
 	<br><br>
-</font0>
-<center>
-<table>
-  
-	<tr>
-	  	<td>&nbsp</td>
-	    <td>
-<pre><font0>
-<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">fridge {
-    var sprite = 9
-    var coke = 8 
-    var fanta = 7
-}</a>
-fun main() {
-    val <a style="background-color: #99f599">pocket</a> = <a style="background-color: #FFD6FF">fridge()</a>
-    val <a style="background-color: #d3d5ff">tookFanta</a> = <a style="background-color: #ffff00">readLine()</a>!!.toInt()
-    <a style="background-color: #99f599">pocket</a>.fanta = <a style="background-color: #99f599">pocket</a>.fanta - <a style="background-color: #d3d5ff">tookFanta</a>
-    print("${<a style="background-color: #99f599">pocket</a>.fanta} cans of Fanta")  
-}
-
-<a style="background-color: #00FFFF">2 cans of Fanta</a>
-<a href = "https://paiza.io/projects/L5EuOvZSNgoqwugMyhA-Yw?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
-</font0>
-
-</pre> 	
-</font0>
-</pre> 	
-	    </td>
-	    <td><a style="color: lightgray">
-	   <center>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br>
-	    	|<br></center></a>
-	    </td>
-	    <td>
-<pre><font0>
-<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">fridge {
-    var sprite = 9
-    var coke = 8 
-    var fanta = 7
-}</a>
-
-let <a style="background-color: #99f599">pocket</a> = <a style="background-color: #FFD6FF">fridge()</a>
-let <a style="background-color: #d3d5ff">tookFanta</a> = Int(<a style="background-color: #ffff00">readLine()</a>!)!
-<a style="background-color: #99f599">pocket</a>.fanta = <a style="background-color: #99f599">pocket</a>.fanta - <a style="background-color: #d3d5ff">tookFanta</a>
-print("\(<a style="background-color: #99f599">pocket</a>.fanta) cans of Fanta")
-
-
-<a style="background-color: #00FFFF">2 cans of Fanta</a>
-<a href = "https://paiza.io/projects/Y2qRG1_K4lz6nOIaPZIOcw?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
-</font0>
-
-</pre> 	
-	 	</td>
-		<td>&nbsp</td>
-	</tr>
-</table>
-</center>
-<font0>
-In this case, as you can see, we use the familiar Commander <a style="background-color: #ffff00">readLine()</a>. 
-<br><br>
-Also there, we are doing some manipulations with data types. The grand takeaway from this fragment of code with <a style="background-color: #ffff00">readLine()</a> is that this code works very well and you can use it in your projects.
-<br><br>
-
--->
-	
+	Pay attention, while creating a Commander we can, if wanted, give it a name containing only one letter — the letter <a style="background-color: #FFD6FF">b</a>, for example.
+	<br><br>
 	</font0>
 
 
@@ -1213,7 +1119,7 @@ Also there, we are doing some manipulations with data types. The grand takeaway 
 	<br><br>
 	As we can see, they both — the <b>dog</b> Max and  the <b>cat</b> Bella — have and will always have one thing in common: each of them is a pet!
 	<br><br>
-	So the class <b>pet</b> is what they have in common — in other words, the <b>pet</b> is the object they have and will always have in common.
+	So the class <b>pet</b> is what they have in common — in other words, the <b>pet</b> is the object they have and will always have, for their parameter <b>species</b>, in common.
 	<br><br>
 	An example of code:
 
@@ -1242,8 +1148,8 @@ Also there, we are doing some manipulations with data types. The grand takeaway 
     }
 }</a>
 fun main() {
-    var myDog = pet("dog", "Max", 3)
-    var myCat = pet("cat", "Bella", 2)
+    var d = pet("dog", "Max", 3)
+    var c = pet("cat", "Bella", 2)
 }
 <a style="color: lightgray"><b>RESULT:</b></a>
 <a style="background-color: #00FFFF">Max is a dog.
@@ -1338,8 +1244,8 @@ It is 2.</a>
 	}
 }</a>
 
-var myDog = pet("dog", "Max", 3)
-var myCat = pet("cat", "Bella", 2)
+var d = pet("dog", "Max", 3)
+var c = pet("cat", "Bella", 2)
 
 <a style="color: lightgray"><b>RESULT:</b></a>
 <a style="background-color: #00FFFF">Max is a dog.
@@ -1365,7 +1271,7 @@ It is 2.</a>
 -->
 	Finally, we might say that the <b>dog</b> Max is an instance of the class <b>pet</b>. And that the <b>cat</b> Bella also is an instance of the class <b>pet</b>.
 	<br><br>
-	This nice program  lets us add bunches of dogs and cats to some stucture to see what happens.
+	This nice program lets us add bunches of structured information of dogs and cats to see what happens.
 	<br><br>
 	Here below is the same above code in a little bit another appearance:
 </font0>
@@ -1393,8 +1299,8 @@ It is 2.</a>
     }
 }</a>
 fun main() {
-    var myDog = pet("dog", "Max", 3)
-    var myCat = pet("cat", "Bella", 2)
+    var d = pet("dog", "Max", 3)
+    var c = pet("cat", "Bella", 2)
 }
 <a style="color: lightgray"><b>RESULT:</b></a>
 <a style="background-color: #00FFFF">Max is a dog.
@@ -1458,8 +1364,8 @@ It is 2.</a>
 	}
 }</a>
 
-var myDog = pet("dog", "Max", 3)
-var myCat = pet("cat", "Bella", 2)
+var d = pet("dog", "Max", 3)
+var c = pet("cat", "Bella", 2)
 
 <a style="color: lightgray"><b>RESULT:</b></a>
 <a style="background-color: #00FFFF">Max is a dog.
@@ -1510,10 +1416,10 @@ It is 2.</a>
     }
 }</a>
 fun main() {
-    var myDog = pet("dog", "Max")
-    var myCat = pet("cat", "Bella")
-    myDog.makeSound()
-    myCat.makeSound()
+    var d = pet("dog", "Max")
+    var c = pet("cat", "Bella")
+    d.makeSound()
+    c.makeSound()
 }
 <a style="color: lightgray"><b>RESULT:</b></a>
 <a style="background-color: #00FFFF">Max is a dog.
@@ -1579,10 +1485,10 @@ Bella says meow.</a>
     }
 }</a>
 
-var myDog = pet("dog", "Max")
-var myCat = pet("cat", "Bella")
-myDog.makeSound()
-myCat.makeSound()
+var d = pet("dog", "Max")
+var c = pet("cat", "Bella")
+d.makeSound()
+c.makeSound()
 
 <a style="color: lightgray"><b>RESULT:</b></a>
 <a style="background-color: #00FFFF">Max is a dog.
@@ -1623,8 +1529,8 @@ Bella says meow.</a>
     }
 }</a>
 fun main() {
-    var b = numbers(2)
-    b.triple()
+    var i = numbers(<a style="background-color: #00ff00">2</a>)
+    i.triple()
 }
 <a style="background-color: #00FFFF">
 6</a>
@@ -1677,8 +1583,8 @@ fun main() {
     }
 }</a>
 
-var b = numbers(2)
-b.triple()
+var i = numbers(<a style="background-color: #00ff00">2</a>)
+i.triple()
 
 <a style="background-color: #00FFFF">
 6</a>
@@ -1692,9 +1598,7 @@ b.triple()
 </table>
 </center>
 <font0>
-	In essence, this means that you can create your own Methods which, of course, will be your Slave Commanders; and even more than it —  all methods, that already exist in Kotlin and Swift, might have been created this way. And they have.
-	<br><br>
-	If wanted, we might give an object to a Method through the user input <i>(if needed, you might see how to do that so-called user input in the <a style="color: red"><b>book 1</b></a>, paragraph <b>Inputs</b> <a href = "https://kotlinandswift.github.io/" target = "_blank">here</a>)</i>: 
+	Of course, if wanted, we might give the integer number <a style="background-color: #00ff00">2</a> to  the above program through the user input  <i>(if needed, you might see how to do that so-called user input in the <a style="color: red"><b>book 1</b></a>, paragraph <b>Inputs</b> <a href = "https://kotlinandswift.github.io/" target = "_blank">here</a>)</i>: 
 	<br>
 </font0>
 <center>
@@ -1715,8 +1619,8 @@ b.triple()
 }</a>
 fun main() {
     val myInput = readLine()!!.toInt()
-    var b = numbers(myInput)
-    b.triple()
+    var i = numbers(myInput)
+    i.triple()
 }
 
 <a style="background-color: #00ff00">2</a>
@@ -1771,8 +1675,8 @@ fun main() {
 }</a>
 
 var myInput = Int(readLine()!)!
-var b = numbers(myInput)
-b.triple()
+var i = numbers(myInput)
+i.triple()
 
 
 <a style="background-color: #00ff00">2</a>
@@ -1787,8 +1691,8 @@ b.triple()
 </table>
 </center>
 <font0>
-
-<br><br>
+	In essence, this means that you can create your own Methods which, of course, will be your Slave Commanders; and even more than it —  all methods, that already exist in Kotlin and Swift, might have been created this way. And they have.
+	<br><br>
 </font0>
 
 
@@ -1798,7 +1702,7 @@ b.triple()
 	<fontHeading><center>Only 2 types of Commanders</center></fontHeading>
 	<font0>
 After all, you might divide all Commanders into 2 types:<br>
-· Commanders that were trained by someone else — print(), println()<br>
+· Commanders that were trained by someone else — print(), println(), ...<br>
 · Commanders that were or will be trained by you — Slave Commanders.<br>
 <br>
 Of course, the same is true of Methods as well.
