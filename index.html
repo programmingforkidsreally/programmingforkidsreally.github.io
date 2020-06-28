@@ -135,43 +135,7 @@ font-weight: bold;
 margin: 4px 2px;
 cursor: pointer;
 }
-.tooltip {
-position: relative;
-display: inline-block;
-}
 
-.tooltip .tooltiptext {
-visibility: hidden;
-width: 140px;
-background-color: #555;
-color: #fff;
-text-align: center;
-border-radius: 6px;
-padding: 5px;
-position: absolute;
-z-index: 1;
-bottom: 150%;
-left: 50%;
-margin-left: -75px;
-opacity: 0;
-transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-content: "";
-position: absolute;
-top: 100%;
-left: 50%;
-margin-left: -5px;
-border-width: 5px;
-border-style: solid;
-border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-visibility: visible;
-opacity: 1;
-}		
 
 </style>
 </head>
@@ -1075,7 +1039,9 @@ print(<a style="background-color: #FFD6FF">g</a>)
 <font0>
 	Just beautiful.
 	<br><br>
-	Pay attention, while creating a Commander we can, if wanted, give it a name containing only a single letter — the letter <a style="background-color: #FFD6FF">g</a>, for example.
+	Pay attention that while creating a Commander we can, if wanted, give it a name containing only a single letter — the letter <a style="background-color: #FFD6FF">g</a>, for example.
+	<br><br>
+	Also, pay attention that the Commander <b>if-else</b> here gives (returns) an object which may be put in the pocket of Pocket Commander <a style="background-color: #FFD6FF">g</a>. When the Commander <b>if-else</b> does so we say that it works as an expression.
 	<br><br>
 	</font0>
 
@@ -1091,17 +1057,660 @@ print(<a style="background-color: #FFD6FF">g</a>)
 	<br><br>
 	Let's start diving into this unbelievably wonderful world.
 	<br><br>
-<!--
-	Suppose we have 2 dogs:
+	Suppose that we want to write a program to record information about such pets as cats.
 	<br><br>
 	<center>
-<img src="dogs.png" height = 400px>
+<img src="cats.png" height = "300px">
 	</center>
 	<br>
-	Bella and Max.
+	As we continue thinking about them, we realize that all cats are quite similar. 
 	<br><br>
--->
-	Suppose that we want to write a program to record information about pets.
+	If we take, for example, any two cats — each of them has its name, its age, its breed, its sex, its color, and so on. 
+	<br><br>
+	In other words, each of them has its object for each its parameter:
+	<br><br>
+	<big>class = "<b>cat</b>", name = "Felix", age = 3, breed = "Korat", sex = "male", color = "gray"</big>
+	<br><br>
+	<big>class = "<b>cat</b>", name = "Kitty", age = 2, breed = "Burmilla", sex = "female", color = "white"</big>
+	<br><br>
+	As we can see, they both — the <b>cat</b> Felix and  the <b>cat</b> Kitty — have and will always have one thing in common: each of them is a cat!
+	<br><br>
+	An example of code:
+
+</font0>
+<center>
+<table>
+  
+	<tr>
+	  	<td>&nbsp</td>
+<td><pre><font0><a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">cat(
+    var anyBreed: String,
+    var anyName: String,
+    var anyAge: Int
+    ) {
+    init {
+
+
+
+
+
+
+
+    println("$anyName is $anyAge.")
+    println("Its breed is $anyBreed.")
+    println()       
+    }
+}</a>
+fun main() {
+    var c1 = cat("Korat", "Felix", 3)
+    var c2 = cat("Burmilla", "Bella", 2)
+}
+<a style="color: lightgray"><b>RESULT:</b></a>
+<a style="background-color: #00FFFF">Felix is 3.
+Its breed is Korat.
+
+Bella is 2.
+Its breed is Burmilla.</a>
+<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a></font0></pre> 	
+	    </td>
+	    <td><a style="color: lightgray">
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>	    	
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>	    	
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>	    		    	
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br></a>
+	    </td>
+<td><pre><font0><a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">cat {
+    var anyBreed: String
+    var anyName: String
+    var anyAge: Int
+    
+    init(
+    _ anyBreed: String, 
+    _ anyName: String, 
+    _ anyAge: Int) {
+    self.anyBreed = anyBreed
+    self.anyName = anyName
+    self.anyAge = anyAge
+
+    print("\(anyName) is \(anyAge).")
+    print("Its breed is \(anyBreed).")
+    print()   
+	}
+}</a>
+
+var c1 = cat("Korat", "Felix", 3)
+var c2 = cat("Burmilla", "Bella", 2)
+
+<a style="color: lightgray"><b>RESULT:</b></a>
+<a style="background-color: #00FFFF">Felix is 3.
+Its breed is Korat.
+
+Bella is 2.
+Its breed is Burmilla.</a>
+<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a></font0></pre> 	
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+</table>
+</center>
+<font0>
+	Absolutely great.
+	<br><br>
+	As we can see, the class Commander helps us do more amazing things.
+	<br><br>
+	Finally, we might say that the <b>cat</b> Flix is an instance of the class <b>cat</b>. And that the <b>cat</b> Kitty also is an instance of the class <b>cat</b>.
+	<br><br>
+	This nice program lets us add bunches of structured information of cats to see what happens — to see how this information is sorted.
+	<br><br>
+	Another example of code:
+
+
+
+</font0>
+<center>
+<table>
+  
+	<tr>
+	  	<td>&nbsp</td>
+<td><pre><font0><a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">dog(
+    var anyBreed: String,
+    var anyName: String,
+    var anyAge: Int
+    ) {
+    init {
+
+
+
+
+
+
+
+    println("$anyName is $anyAge.")
+    println("Its breed is $anyBreed.")
+    println()       
+    }
+}</a>
+fun main() {
+    var d1 = dog("Beagle", "Max", 5)
+    var d2 = dog("Maltese", "Daisy", 1)
+}
+<a style="color: lightgray"><b>RESULT:</b></a>
+<a style="background-color: #00FFFF">Max is 5.
+Its breed is Beagle.
+
+Daisy is 1.
+Its breed is Maltese.</a>
+<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a></font0></pre> 	
+	    </td>
+	    <td><a style="color: lightgray">
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>	    	
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>	    	
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>	    		    	
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br></a>
+	    </td>
+<td><pre><font0><a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">dog {
+    var anyBreed: String
+    var anyName: String
+    var anyAge: Int
+    
+    init(
+    _ anyBreed: String, 
+    _ anyName: String, 
+    _ anyAge: Int) {
+    self.anyBreed = anyBreed
+    self.anyName = anyName
+    self.anyAge = anyAge
+
+    print("\(anyName) is \(anyAge).")
+    print("Its breed is \(anyBreed).")
+    print()   
+	}
+}</a>
+
+var d1 = dog("Beagle", "Max", 5)
+var d2 = dog("Maltese", "Daisy", 1)
+
+<a style="color: lightgray"><b>RESULT:</b></a>
+<a style="background-color: #00FFFF">Max is 5.
+Its breed is Beagle.
+
+Daisy is 1.
+Its breed is Maltese.</a>
+<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a></font0></pre> 	
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+</table>
+</center>
+<font0>
+ 	Plus, we can create Functions inside a <a style="background-color: #FFD851">class</a>:
+ 	<br><br>
+</font0>
+
+<center>
+<table>
+  
+	<tr>
+	  	<td>&nbsp</td>
+	    <td><pre><font0><a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">dog(
+    var anyName: String,
+    var anyWeight: Int
+    ) {
+    init {
+
+
+
+    println("$anyName is $anyWeight kg.")
+    }
+    var weight = anyWeight
+    var name = anyName
+
+    <a style="background-color: #99f599">fun</a><a style="background-color: #FFD6FF"> makeSound() {
+    print("$name says")
+    println(if (weight < 20)
+    " yip." else " woof.")
+    }
+}</a>
+fun main() {
+    var d1 = dog("Max", 30)
+    var d2 = dog("Daisy", 10)
+    d1.makeSound()
+    d2.makeSound()
+}
+<a style="color: lightgray"><b>RESULT:</b></a>
+<a style="background-color: #00FFFF">Max is 30 kg.
+Daisy is 10 kg.
+Max says woof.
+Daisy says yip.</a>
+<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</font0>
+
+</pre> 	
+</font0>
+</pre> 	
+	    </td>
+	    <td><a style="color: lightgray">
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br></a>
+	    </td>
+	    <td><pre><font0><a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">dog {
+    var anyName: String
+    var anyWeight: Int
+
+    init(
+    _ anyName: String,
+    _ anyWeight: Int
+    ) {
+    print("\(anyName) is \(anyWeight) kg.")
+
+    self.anyName = anyName
+    self.anyWeight = anyWeight
+    }
+    <a style="background-color: #99f599">func</a><a style="background-color: #FFD6FF"> makeSound() {
+    print("\(anyName) says", terminator:"")
+    print(anyWeight < 20  
+    ? " yip." : " woof.")
+    }
+}</a>
+
+var d1 = dog("Max", 30)
+var d2 = dog("Daisy", 10)
+d1.makeSound()
+d2.makeSound()
+
+<a style="color: lightgray"><b>RESULT:</b></a>
+<a style="background-color: #00FFFF">Max is 30 kg.
+Daisy is 10 kg.
+Max says woof.
+Daisy says yip.</a>
+<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</font0>
+
+</pre> 	
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+</table>
+</center>
+<font0>
+	To figure out how the code above works, first try learning from code.
+	<br><br>
+
+	<button class="button" onclick="myFunction100()">
+	See Explanations to the <a style="color: red">Code</a>
+	</button>
+
+<div id="myDIV100" style="display: none">
+	<br>
+	<b>The Explanations are below. Enjoy them  :)</b>
+	<br><br>
+	By the <a style="color: #6720DF"><b>1-st string</b></a> of code:
+	<br><br>
+
+
+	The Commander <b>if-else</b> here again works as an expression.
+	<br><br>
+</div>
+	<br><br>
+
+
+
+
+
+
+	Wow. Great.
+	<br><br>
+	As we can see, the grand capabilities of the <b>class</b> allow us to call a Function in the Method-style.
+	<br><br>
+	Indeed, a class may even have one parameter:
+	<br>
+</font0>
+<center>
+<table>
+  
+	<tr>
+	  	<td>&nbsp</td>
+	    <td>
+<pre><font0>
+<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">numbers(var anyNumber: Int) {
+
+
+    var number = anyNumber
+
+    fun triple() {
+    println(number * 3)
+    }
+}</a>
+fun main() {
+    var i = numbers(<a style="background-color: #00ff00">2</a>)
+    i.triple()
+}
+<a style="background-color: #00FFFF">
+6</a>
+<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</font0>
+
+</pre> 	
+</font0>
+</pre> 	
+	    </td>
+	    <td><a style="color: lightgray">
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br></a>
+	    </td>
+	    <td>
+<pre><font0>
+<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">numbers{var anyNumber: Int
+
+    init(_ anyNumber: Int) {
+    self.anyNumber = anyNumber
+    }
+    func triple() {
+    print(anyNumber * 3)
+    }
+}</a>
+
+var i = numbers(<a style="background-color: #00ff00">2</a>)
+i.triple()
+
+<a style="background-color: #00FFFF">
+6</a>
+<a href = "https://paiza.io/projects/wrtAHvy10sCW_-Na6a7e1g?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</font0>
+
+</pre> 	
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+</table>
+</center>
+<font0>
+	Of course, if wanted, we might give the integer number <a style="background-color: #00ff00">2</a> to  the above program through the user input  <i>(if needed, you might see how to do that so-called user input in the <a style="color: red"><b>book 1</b></a>, paragraph <b>Inputs</b> <a href = "https://kotlinandswift.github.io/" target = "_blank">here</a>)</i>: 
+	<br>
+</font0>
+<center>
+<table>
+  
+	<tr>
+	  	<td>&nbsp</td>
+	    <td>
+<pre><font0>
+<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">numbers(var anyNumber: Int) {
+
+
+    var number = anyNumber
+
+    fun triple() {
+    println(number * 3)
+    }
+}</a>
+fun main() {
+    val ourInput = readLine()!!.toInt()
+    var i = numbers(ourInput)
+    i.triple()
+}
+
+<a style="background-color: #00ff00">2</a>
+<a style="background-color: #00FFFF">6</a>
+<a href = "https://paiza.io/projects/GapOyPFNAOJ_vNmtYpGZGQ?language=kotlin" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</font0>
+
+</pre> 	
+</font0>
+</pre> 	
+	    </td>
+	    <td><a style="color: lightgray">
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br>
+	    	|<br></a>
+	    </td>
+	    <td>
+<pre><font0>
+<a style="background-color: #FFD851">class</a> <a style="background-color: #FFD6FF">numbers{var anyNumber: Int
+
+    init(_ anyNumber: Int) {
+    self.anyNumber = anyNumber
+    }
+    func triple() {
+    print(anyNumber * 3)
+    }
+}</a>
+
+var ourInput = Int(readLine()!)!
+var i = numbers(ourInput)
+i.triple()
+
+
+<a style="background-color: #00ff00">2</a>
+<a style="background-color: #00FFFF">6</a>
+<a href = "https://paiza.io/projects/wrtAHvy10sCW_-Na6a7e1g?language=swift" target = "_blank">Play&nbspAround&nbspwith&nbspthe&nbspCode</a>
+</font0>
+
+</pre> 	
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+</table>
+</center>
+<font0>
+	In essence, this means that you can create your own Methods which, of course, will be your Slave Commanders; and even more than it —  all methods, that already exist in Kotlin and Swift, might have been created this way. And they have.
+	<br><br>
+</font0>
+
+
+
+
+
+	<fontHeading><center>Only 2 types of Commanders</center></fontHeading>
+	<font0>
+After all, you might divide all Commanders into 2 types:<br>
+· Commanders that were trained by someone else — print(), println(), ...<br>
+· Commanders that were or will be trained by you — Slave Commanders.<br>
+<br>
+Of course, the same is true of Methods as well.
+<br><br>
+	</font0>
+
+	<fontHeading><center>Inheritance</center></fontHeading>
+	<font0>
+Suppose that we want to write a program to record information about pets.
 	<br><br>
 	<center>
 <img src="pets.png" height = 400px>
@@ -1481,7 +2090,7 @@ Bella says meow.</a>
     <a style="background-color: #99f599">func</a><a style="background-color: #FFD6FF"> makeSound() {
     print("\(anyName) says", terminator:"")
     print(anySpecies == "dog" 
-    ? "woof." : "meow.")
+    ? " woof." : " meow.")
     }
 }</a>
 
@@ -1505,6 +2114,33 @@ Bella says meow.</a>
 </table>
 </center>
 <font0>
+
+	<br>
+	To figure out how the code above works, first try learning from code.
+	<br><br>
+
+	<button class="button" onclick="myFunction100()">
+	See Explanations to the <a style="color: red">Code</a>
+	</button>
+
+<div id="myDIV100" style="display: none">
+	<br>
+	<b>The Explanations are below. Enjoy them  :)</b>
+	<br><br>
+	By the <a style="color: #6720DF"><b>1-st string</b></a> of code:
+	<br><br>
+
+
+	The Commander <b>if-else</b> here again works as an expression.
+	<br><br>
+</div>
+	<br><br>
+
+
+
+
+
+
 	Wow. Great.
 	<br><br>
 	As we can see, the grand capabilities of the <b>class</b> allow us to call a Function in the Method-style.
@@ -1693,25 +2329,6 @@ i.triple()
 <font0>
 	In essence, this means that you can create your own Methods which, of course, will be your Slave Commanders; and even more than it —  all methods, that already exist in Kotlin and Swift, might have been created this way. And they have.
 	<br><br>
-</font0>
-
-
-
-
-
-	<fontHeading><center>Only 2 types of Commanders</center></fontHeading>
-	<font0>
-After all, you might divide all Commanders into 2 types:<br>
-· Commanders that were trained by someone else — print(), println(), ...<br>
-· Commanders that were or will be trained by you — Slave Commanders.<br>
-<br>
-Of course, the same is true of Methods as well.
-<br><br>
-	</font0>
-
-	<fontHeading><center>Inheritance</center></fontHeading>
-	<font0>
-Bla bla bla
 <br><br>
 	</font0>
 
@@ -1831,6 +2448,17 @@ with Bitcoin via lightning:
 <script>
 function myFunction0() {
   var x = document.getElementById("myDIV0");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function myFunction100() {
+  var x = document.getElementById("myDIV100");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
